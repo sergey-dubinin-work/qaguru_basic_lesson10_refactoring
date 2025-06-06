@@ -3,7 +3,7 @@ package guru.qa.demoqa.config.driverConfig;
 import org.aeonbits.owner.Config;
 
 @Config.Sources({ "classpath:config/driver.properties" })
-public interface DriverConfig extends Config {
+public interface DriverConfiguration extends Config {
     @Key("remote.web.user")
     String remoteWebUser();
 

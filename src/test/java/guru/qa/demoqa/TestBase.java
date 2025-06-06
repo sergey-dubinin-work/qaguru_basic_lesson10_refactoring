@@ -2,7 +2,7 @@ package guru.qa.demoqa;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import guru.qa.demoqa.config.driverConfig.DriverConfig;
+import guru.qa.demoqa.config.driverConfig.DriverConfiguration;
 import guru.qa.demoqa.helpers.AllureAttachments;
 import guru.qa.demoqa.helpers.DriverUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -18,7 +18,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
 
-    static DriverConfig driverConfig = ConfigFactory.create(DriverConfig.class);
+    static DriverConfiguration driverConfiguration = ConfigFactory.create(DriverConfiguration.class);
 
     @BeforeAll
     static void setup() {
