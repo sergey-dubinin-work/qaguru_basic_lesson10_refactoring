@@ -1,4 +1,4 @@
-package guru.qa.demoqa.config.driver;
+package guru.qa.demoqa.config.driverConfig;
 
 import org.aeonbits.owner.Config;
 

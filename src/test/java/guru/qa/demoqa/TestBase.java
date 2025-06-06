@@ -2,7 +2,7 @@ package guru.qa.demoqa;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.logevents.SelenideLogger;
-import guru.qa.demoqa.config.driver.DriverConfig;
+import guru.qa.demoqa.config.driverConfig.DriverConfig;
 import guru.qa.demoqa.helpers.AllureAttachments;
 import guru.qa.demoqa.helpers.DriverUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -15,7 +15,6 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import java.util.HashMap;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
-import static guru.qa.demoqa.config.ConfigurationManager.getSelenoidConfig;
 
 public class TestBase {
 
