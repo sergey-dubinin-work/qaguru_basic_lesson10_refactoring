@@ -16,9 +16,9 @@ import java.util.HashMap;
 
 import static com.codeborne.selenide.Selenide.closeWebDriver;
 
-public class TestBase {
 
     static DriverConfiguration driverConfiguration = ConfigFactory.create(DriverConfiguration.class);
+public class BrowserTest {
 
     @BeforeAll
     static void setup() {
