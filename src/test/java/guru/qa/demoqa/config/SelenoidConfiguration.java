@@ -1,4 +1,4 @@
-package guru.qa.demoqa.config.selenoidConfig;
+package guru.qa.demoqa.config;
 
 import org.aeonbits.owner.Config;
 
