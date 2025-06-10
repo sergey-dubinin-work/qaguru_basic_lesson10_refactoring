@@ -9,7 +9,9 @@ public class DriverSettings {
 
     public static void configure(){
 
-        Configuration.browser = getWebDriverConfig().webBrowser();
+        Browser browser =  Browser.valueOf(getWebDriverConfig().webBrowser().toUpperCase());
+
+        Configuration.browser = browser.getBrowserName();
 
         if (getSelenoidConfig().selenoidUrl() != null){
             Configuration.remote = String.format(
@@ -18,10 +20,10 @@ public class DriverSettings {
                     getSelenoidConfig().selenoidPort()
             );
         } else {
-            Browsers.valueOf(Configuration.browser.toUpperCase()).setupBrowserManager();
+           browser.setupBrowserManager();
         }
 
-        Browsers.valueOf(Configuration.browser.toUpperCase()).setupBrowserOptions();
+        browser.setupBrowserOptions();
 
     }
 
