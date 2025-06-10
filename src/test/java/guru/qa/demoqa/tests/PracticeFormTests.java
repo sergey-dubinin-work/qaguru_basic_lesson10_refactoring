@@ -49,7 +49,7 @@ public class PracticeFormTests extends BrowserTest {
                 $("#userNumber").val(mobile);
             });
             step("Set date", () -> {
-                $("#dateOfBirthInput").clear();
+                $("#dateOfBirthInput").click();
                 $(".react-datepicker__month-select").selectOption(monthOfBirth);
                 $(".react-datepicker__year-select").selectOption(yearOfBirth);
                 $(".react-datepicker__day--0" + dayOfBirth).click();
