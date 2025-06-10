@@ -45,7 +45,7 @@ public class PracticeFormTests extends BrowserTest {
                 $("#firstName").val(firstName);
                 $("#lastName").val(lastName);
                 $("#userEmail").val(email);
-                $("#genterWrapper").$(byText(gender)).click();
+                $("#genterWrapper").$(byText(gender)).scrollIntoView(true).click();
                 $("#userNumber").val(mobile);
             });
             step("Set date", () -> {
@@ -105,7 +105,7 @@ public class PracticeFormTests extends BrowserTest {
                 $("#firstName").val(firstName);
                 $("#lastName").val(lastName);
                 $("#userEmail").val(email);
-                $("#genterWrapper").$(byText(gender)).click();
+                $("#genterWrapper").$(byText(gender)).scrollIntoView(true).click();
                 $("#userNumber").val(mobile);
             });
             step("Set date", () -> {
